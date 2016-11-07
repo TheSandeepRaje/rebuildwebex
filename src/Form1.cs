@@ -346,7 +346,7 @@ namespace rebuild
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             DialogResult result = fbd.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
-                textRuta.Text = Path.GetDirectoryName(fbd.SelectedPath);
+                textRuta.Text = fbd.SelectedPath;
             else
                 textRuta.Text = "";
         }
