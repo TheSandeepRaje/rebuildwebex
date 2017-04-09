@@ -32,7 +32,7 @@ namespace rebuild
         void ClearLog()
         {
             textLog.Clear();
-            textLog.Text = "Webex Rebuild Tool v0.1\r\n======================\r\n\r\n1) Selecciona el directorio que contiene la sesion de webex. Si conoces la ruta escribela directamente.\r\n\r2) Pulsa el boton 'Go'\r\n3) La herramienta generara el archivo rebuild.arf";
+            textLog.Text = "Webex Rebuild Tool v0.1\r\n======================\r\n\r\n1) Select the directory containing the webex session. If you know the route write directly.\r\n\r2) Press the 'Go' button\r\n3) The tool will generate the file rebuild.arf";
    
 
         }
@@ -101,8 +101,8 @@ namespace rebuild
                 }
                 writer.Flush();
                 writer.Close();
-                toLog("[=] Archivo reconstruido: " + ficheroSalida);
-                MessageBox.Show("Reconstruccion finalizada","Correcto",MessageBoxButtons.OK,  MessageBoxIcon.Information);
+                toLog("[=] Rebuilt file: " + ficheroSalida);
+                MessageBox.Show("Reconstruction completed "," Correct", MessageBoxButtons.OK,  MessageBoxIcon.Information);
             }
           
         
@@ -161,7 +161,7 @@ namespace rebuild
                 // Comprobamos el tener al menos un archivo wav y un archivo conf
                 if (Files_CFG.Length != 1/* || Files_WAV.Length != 1*/)
                 {
-                    MessageBox.Show("Algo a fallado, lo mismo han cambiado el formato ....");
+                    MessageBox.Show("Something caused to fail, samething has changed the format...");
                     return false;
                 }
                 else
@@ -353,17 +353,17 @@ namespace rebuild
         void Go()
         {
             ClearLog();
-            toLog("[+] Obteniedo ficheros.");
+            toLog("[+] Obtain files.");
             string ruta = textRuta.Text;
             if (ruta.Length > 0)
             {
                 if (FillDataGrid(ruta))
                     Rebuild(ListaContenedor, ruta + "\\rebuild.arf");
                 else
-                    toLog("[-] No se han encontrado los archivos necesarios.");
+                    toLog("[-] Required files not found.");
             }
             else
-                toLog("[-] Seleccione una ruta.");
+                toLog("[-] Select the route");
 
         }
         public  T FromBinaryReader<T>(BinaryReader reader)

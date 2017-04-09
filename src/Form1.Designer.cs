@@ -49,9 +49,9 @@
             this.go.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.go.Location = new System.Drawing.Point(773, 95);
             this.go.Name = "go";
-            this.go.Size = new System.Drawing.Size(30, 24);
+            this.go.Size = new System.Drawing.Size(33, 26);
             this.go.TabIndex = 0;
-            this.go.Text = "..";
+            this.go.Text = "BR";
             this.go.UseVisualStyleBackColor = true;
             this.go.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -94,7 +94,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Salir";
+            this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -105,7 +105,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 29);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Acerca de ...";
+            this.button2.Text = "About...";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -147,7 +147,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Ruta:";
+            this.label1.Text = "Path:";
             // 
             // Form1
             // 
